@@ -1,0 +1,36 @@
+* { padding: 0;
+margin: 0;}
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    background-color: aqua;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.headernav {
+    list-style: none;
+    display:flex;
+    flex-direction: row;
+    justify-content: center ;
+    align-items: center;
+   
+    padding: 30px;
+    
+
+}
+.headernavanc {
+margin: 2rem;
+font-size: 30px;
+font-family: Arial, Helvetica, sans-serif;
+
+}
+.mainparrafo {
+    background-color: black;
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
