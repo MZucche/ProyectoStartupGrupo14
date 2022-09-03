@@ -1,11 +1,25 @@
 /* General */
+html {
+    height: 100%;
+}
+body {
+    background-color: #ff95c7;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
 * { padding: 0;
     margin: 0;}
+    h1 a {
+        color: white;
+    }
 a {
      text-decoration: none;
      color: black;
   }
-    
+a:hover {
+    color:red;   
+} 
 li {
         list-style: none;
    }
@@ -16,17 +30,18 @@ li {
 }
 .headerContainer h1 {
     width: 100%;
-    background-color: #A84118;
-    font-family: Papyrus, Helvetica, sans-serif;
+    background-color: #000000;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 40px;
     display: flex;
     justify-content: center;
     padding: 30px;
+    color: white;
 }
 .headerContainer nav{
-    background-color: #E09255;
+    background-color: #9e398d;
     width: 100%;
-    font-family: Courier, Helvetica, sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: bolder;
     font-size: 30px;
     display: flex;
@@ -34,6 +49,8 @@ li {
     
 }
 .headernav{
+    margin-left: 15%;
+    margin-right: 15%;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -55,11 +72,14 @@ li {
     justify-content: center;
     font-family: Arial, Helvetica, sans-serif;
     padding: 15px;
+    margin-left: 14%;
+    margin-right: 14%;
+    margin-top: 2%;
 } 
 /* main integrantes */
 .mainIntegrantes{
-   padding: 20px;
-   height: 220px;
+   padding: 2.5%;
+   font-family: Arial, Helvetica, sans-serif;
 }
 /* main - servicios */
 .mainServicios{
@@ -74,10 +94,10 @@ li {
  /* footer */
 .footerHome {
     width: 100%;
+    margin-top: auto;
 }   
 .footerHome h2{
     width: 100%;
-    background-color: #A84118;
     font-family: Papyrus, Helvetica, sans-serif;
     display: flex;
     justify-content: center;
@@ -85,7 +105,6 @@ li {
     padding: 5px;
 } 
 .footerHome section{
-    background-color: #E09255;
     width: 100%;
     font-family: Arial, Helvetica, sans-serif;
     padding: 5px;
@@ -102,7 +121,6 @@ li {
 }
 
 .footerHome div{
-    background-color: #E09255;
     display: flex;
     justify-content: center;
     font-size: 10px;
@@ -112,3 +130,17 @@ li {
 
   /* Perfil marilyn vino Css */
 @import url('marilynV.css');
+Footer
+© 2022 GitHub, Inc.
+Footer navigation
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
