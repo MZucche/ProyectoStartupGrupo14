@@ -51,6 +51,7 @@ a {
 
 }
 .Title2 {
+    margin-left: 1%;
     display: flex;
     justify-content: left;
     background-color: black;
