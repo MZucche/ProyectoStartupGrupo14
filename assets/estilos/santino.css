@@ -1,0 +1,71 @@
+html {
+    height: 100%;
+}
+body {
+    padding: 0%;
+    margin: 0%;
+    background-color: #e7dfd8;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+.santino1 {
+    padding: 0%;
+    margin: 0%;
+    padding-top: 0%;
+    justify-content: left;
+    font-family: Canva Sans,Noto Sans Variable,Noto Sans,-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif;
+    color: #281e14;
+    display: flex;
+}
+.titulofsmm {
+    padding: 0%;
+    margin: 0%;
+    padding-top: 0%;
+    justify-content: center;
+    font-family: Canva Sans,Noto Sans Variable,Noto Sans,-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif;
+    color: #281e14;
+    background-color: #8d7e72;
+    display: flex;
+}
+a {
+    text-decoration: none;
+    color: #281e14;
+}
+.headernav {
+    padding: 2%;
+    margin: 0%;
+    list-style: none;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center; 
+}
+.headernavanc {
+    margin: 0px;
+    font-size: 20px;
+    font-family: Canva Sans,Noto Sans Variable,Noto Sans,-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif;
+    font-weight: bolder;
+    color: #e7dfd8;
+
+}
+.headernavanc a:hover {
+    color: #654f3b;
+}
+.div2 {
+    border: solid #281e14;
+    border-width: 1px;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-family: Canva Sans,Noto Sans Variable,Noto Sans,-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif;
+}
+.logos {
+    padding: 2%;
+    margin: 0%;
+    list-style: none;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center; 
+    size: auto;
+}
