@@ -21,29 +21,41 @@
         </nav>
        </div>
     </header>
-    <p class="mainparrafo">
-        Telefono: 1193857192<br><br>
-        Email: fsmm@uade.edu.ar<br><br>
-        Ubicacion: Lima 775, C1073 CABA <a href="https://www.google.com/maps/place/UADE/@-34.6173786,-58.3818095,15z/data=!4m2!3m1!1s0x0:0x1a2dc24cbca665a7?sa=X&ved=2ahUKEwjW3NWG_4X6AhWAvJUCHRG7CJwQ_BJ6BAhbEAU" target="_blank"> <img src="../assets/location.png" alt="Ubicaion" width="18" height="20">
-        </a>
-    </p>
-    <br>
-    <main class="mainContacto">
-        <form class="mainparrafo">
-            <input type="text" placeholder="Nombre y Apellido" id="fname" name="fname"><br>
-            <input type="text" placeholder="Mail de contacto" id="lname" name="lname"><br>
-            <input type="text" placeholder="Nombre de la organizacion" id="oname" name="oname">
-            <input type="submit">
-          </form>
 
+    <section class="contaier">
+        <article class="article-container">
+            <h2 class="LogoFSMM">
+                <img src="../assets/FSMM.PNG" alt="LogoFSMM">
+            </h2>
+            <div class="info">
+                <p class="pCont">
+                    Telefono: 1193857192<br><br>
+                    Email: fsmm@uade.edu.ar<br><br>
+                    Ubicacion: Lima 775, C1073 CABA <a href="https://www.google.com/maps/place/UADE/@-34.6173786,-58.3818095,15z/data=!4m2!3m1!1s0x0:0x1a2dc24cbca665a7?sa=X&ved=2ahUKEwjW3NWG_4X6AhWAvJUCHRG7CJwQ_BJ6BAhbEAU" target="_blank"> <img src="../assets/location.png" alt="Ubicaion" width="18" height="20">
+                    </a>
+                </p>
+            </div>
+        </article>
+    </section>
+    <div class="formdiv">
+        <form action="" method="get" class="formC">
+            <div class="formC">
+                <input type="text" placeholder="Nombre y Apellido" name="name" id="name" required>
+            </div>
+            <div class="formC">
+                <input type="email" placeholder="Mail de contacto" name="email" id="email" required>
+            </div>
+            <div class="formC">
+                <input type="text" placeholder="Nombre de la organizacion" name="name" id="name" required>
+            </div>
+            <div class="formC">
+                <input type="submit" value="Enviar">
+            </div>
+        </form>
+    </div>
     </main>
     <footer class="footerHome">
-        <section class="footerSection">
-            <h3>Acerca de nosotros</h3>
-            <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, assumenda repellendus. Doloremque voluptatem, labore quam voluptate illum, exercitationem aut ipsam facere, deleniti natus minima obcaecati enim? Quaerat velit incidunt itaque.</P>
-        </section> 
-        <div>©Copyright 2022 FSMM - Todos los Derechos Reservados
-        </div>      
-    </footer>  
+        <div> ©Copyright 2022 FSMM - Todos los Derechos Reservados</div>
+    </footer>
 </body>
 </html>
