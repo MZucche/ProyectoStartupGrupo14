@@ -155,24 +155,17 @@ li {
     justify-content: center;
     font-family: Arial, Helvetica, sans-serif;
 }
-.formconrainer {
-    display: table-row;
+.formdiv {
+    padding-left: 45%;
+    justify-content: center;
 }
 form.formC {
     display: table;
 }
-.formdiv {
-    justify-content: center;
-}
-div.formC {
-    display: table-row;
-}
-
 label, input {
     display: table-cell;
     margin-bottom: 10px;
 }
-
 label {
     padding-right: 10px;
 }
