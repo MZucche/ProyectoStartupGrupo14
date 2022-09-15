@@ -3,7 +3,7 @@ html {
     height: 100%;
 }
 body {
-    background-color: #FFFFFF;
+    background-color: #ebd8fd;
     display: flex;
     flex-direction: column;
     min-height: 100%;
@@ -18,7 +18,7 @@ a {
      color: white;
   }
 a:hover {
-    color:red;   
+    color: #ebd8fd;   
 } 
 li {
         list-style: none;
@@ -30,7 +30,6 @@ li {
 }
 .headerContainer h1 {
     color: white;
-    width: 100%;
     background-color: #131241;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 40px;
@@ -99,46 +98,91 @@ li {
 
 }
 /* main - servicios */
+.mainparrafoS {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 15px;
+    margin-left: 14%;
+    margin-right: 14%;
+    margin-top: 2%;
+}
 .mainServicios{
-   height: 300px;
+    height: 150px;
+}
+.ImgSU {
+    padding-left: 32%;
+    padding-bottom: 2%;
+    width: 38%;
+    height: 38%;
 }
 
 /* main - contacto */
 .mainContacto{
     height: 300px;
- }
- 
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.article-container {
+    padding-top: 2%;
+    padding-left: 35%;
+    padding-bottom: 0.5cm;
+    display: flex;
+}
+.article-img {
+    border-radius: 0.5rem;
+    border: solid black 2px;
+    max-width: 50%;
+    max-height: 240px;
+    margin-right: 25px;
+}
+.h2-article {
+    font-family: copperplate, fantasy, sans-serif;
+    padding: 10px 10px;
+}
+.pCont {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-right: 25%;
+    text-shadow: 1px 1px 5px black;
+}
+.formC {
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.formconrainer {
+    display: table-row;
+}
+form.formC {
+    display: table;
+}
+.formdiv {
+    justify-content: center;
+}
+div.formC {
+    display: table-row;
+}
+
+label, input {
+    display: table-cell;
+    margin-bottom: 10px;
+}
+
+label {
+    padding-right: 10px;
+}
+
  /* footer */
 .footerHome {
     width: 100%;
     margin-top: auto;
-}   
-.footerHome h2{
-    width: 100%;
-    font-family: Papyrus, Helvetica, sans-serif;
     display: flex;
     justify-content: center;
-    font-size: 18px;
-    padding: 5px;
-} 
-.footerHome section{
-    width: 100%;
     font-family: Arial, Helvetica, sans-serif;
-    padding: 5px;
-    font-size: 13px;
-   
-}
-.footerSection h3{
-    display: flex;
-    justify-content: center;
-}
-.footerSection p{
-    display: flex;
-    justify-content: center;
-}
-
-.footerHome div{
-    display: flex;
-    justify-content: center;
-    font-size: 10px;
-} 
+    font-size: 13px; 
+    } 
