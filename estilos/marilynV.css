@@ -1,60 +1,80 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+/* HEADER */
+.headerM{
+    background-color: #3AB0FF;
+    border: solid #3AB0FF;
+    width: 100%;
+    height: 15%;
+    
+}
 /*css de la pagina principal -header */
 h1 {
-    font-family: Papyrus, Helvetica, sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 40px;
-    background-color: #A84118;
     justify-content: center;
     align-items: center;
     display: flex;
-}
-h2 {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-ul {
-    font-family: Courier, Helvetica, sans-serif;
-    font-weight: bolder;
-    background-color: #E09255;
+    color: #FFF9F9;
+    height: 45px;
+    padding-top: 15px;
     
 }
+
+ul {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+}
+
+h2 {
+    font-family: 'Roboto', sans-serif;
+    }
+
 .headernav {
+    width: 60%;
+    height: 100%;
+    padding: 8px;
+    margin-left: 15px;
+    margin-top: 20px;
     list-style: none;
     display:flex;
     flex-direction: row;
-    justify-content: center ;
-    align-items: center; 
-    padding: 30px;
-    
-
+    justify-content: space-around ;
 }
-.headernavanc {
-margin: 2rem;
-font-size: 30px;
-font-family: Courier, Helvetica, sans-serif;
-font-weight: bolder;
-color: white;
-
+.headernav li{
+    font-size: 18px;
+    padding: 2px;
 }
-.mainparrafo {
-    background-color: black;
-    display: flex;
-    color: white;
-    align-items: center;
-    justify-content: center;
-    font-family: Arial, Helvetica, sans-serif;
-
+.headernav li a{
+   color: #FFF9F9; 
 }
+.headernav li a:hover{
+    color: #1363DF; 
+ }
+/* body */
+.bodyM{
+    width: 100%;
+    height: 900px;
+}
+.mainBox{
+    background-color: #DDDDDD;
+    width: 100%;
+    height: 100%;
+}
+
 /* ------------------------------------- */
 /* Articulo del perfil */
 .containerArtMari{
     width: 100%;
     height: 300px;
-    margin: 0;
-    padding: 0;
+    padding-top: 15px;
     display: flex;
     flex-direction: column-reverse;
     justify-content: start;
     align-items: center;
-   
+  
 }
   /* imagen perfil */
 .containerArtMari img{
@@ -70,13 +90,12 @@ color: white;
     width: 100%;
     display: flex;
     justify-content: center;
-    /* order: 2; */
+    padding: 15px;
 }
   /* presentación - inicio */
 .presentationMari{
    order: 3;
    width: 100%;
-  /*  height: px; */
    margin: 0;
    padding: 0;
    display: flex;
@@ -86,68 +105,86 @@ color: white;
 .presentationMari h4{
     width: 100%;
     height: 15px;
-    margin: 0;
-    padding: 0;
+    padding: 5px;
     display: flex;
     justify-content: center;
+    font-family: 'Poppins', sans-serif;
 }
 .presentationMari h2{
     width: 100%;
     height: 25px;
-    margin: 0;
-    padding: 0;
+    padding: 5px;
     display: flex;
     justify-content: center;
 }
 .presentationMari h3{
     width: 100%;
     height: 20px;
-    margin: 0;
-    padding: 0;
+    padding: 5px;
     display: flex;
     justify-content: center;
+    font-family: 'Poppins', sans-serif;
+
 }
    /* contacto email */
 .contactMari{
     border-radius: 0.2rem;
     border: solid black 0.5px;
     box-shadow: 0px 4px 19px rgba(0, 0, 0, 0.25);
-    margin: 0;
-    padding: 0;
+    background-color: #1363DF;
+    padding: 10px;
+    margin-top: 5px;
+    font-family: 'Poppins', sans-serif;
+}
+.contactMari a{
+    color: #FFF9F9;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+
+}
+.contactMari:hover{
+    background-color: #3AB0FF;
 }
 /* Sección de descripción */
 .containerSectionMari{
     width: 100%;
-    margin: 0;
-    padding: 0;
+    margin-top: 25px;
+    padding: 10px;
     display: flex;
     flex-direction: column;
-    /* justify-content: center;
-    align-items: center; */
 
 }
 .containerSectionMari h3{
-    margin: 0;
-    padding: 0;
+    padding: 5px;
     width: 90%;
     display: flex;
     justify-content: center;
+    font-family: 'Poppins', sans-serif;
+   
 }
   /* descripción */
 .boxDescriptionMari{  
     width: 90%;
-    margin: 0;
-    padding: 0;
 
 }
 .boxDescriptionMari h4{
     width: 90%;
-    margin: 0;
-    padding: 0;
-    /* display: flex;
-    justify-content: flex-start; */
+    padding: 8px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
 }
-
+  /* footer */
+.footerM{
+    background-color: #3AB0FF;
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.footerM p{
+    color: #FFF9F9;
+}
  /* MEDIA QUERIES */ 
  /*MOBILE*/
  @media (min-width: 320px){
@@ -165,8 +202,7 @@ color: white;
 .containerArtMari{
     width: 100%;
     height: 300px;
-    margin: 0;
-    padding: 0;
+    padding-top: 25px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -205,7 +241,7 @@ color: white;
 .presentationMari h4{
     height: 25px;
     justify-content: start;
-
+    
 }
 .presentationMari h2{
     height: 45px;
