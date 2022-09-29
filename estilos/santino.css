@@ -52,7 +52,9 @@ a {
 .headernavanc a:hover {
     color: #654f3b;
 }
-.div2 {
+.main {
+    display: flex;
+    flex-direction: row;
     padding: 20px;
     border: solid #281e14;
     border-width: 1px;
@@ -69,11 +71,15 @@ a {
     justify-content: left;
     align-items: center;
 }
-.imagensantino {
-    float: right;
-    display: flex;
-    width: 500px;
-    height: 500px;
+.foto {
+    width: 30%;
+    max-width: 100%;
+    max-height: auto;
+    justify-content: center;
+    order: 2;
+}
+.texto{
+    width: 70%;
 }
 .footer {
     width: 100%;
@@ -84,4 +90,15 @@ a {
     font-size: 13px; 
     background-color: #654f3b;
     color: #281e14;
+}
+img{
+    width: 100%;
+}
+@media only screen and (max-width:600px){
+    .main {
+        flex-direction: column;
+    }
+    .foto{
+        order: 1;
+    }
 }
