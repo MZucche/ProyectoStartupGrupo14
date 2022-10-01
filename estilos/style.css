@@ -201,6 +201,19 @@ label {
  @media ( max-width: 765px ) /* mobile */
  {
 .headernav{
-        display: none;
-    }     
+        display: none; /* etiqueta nav */
+    } 
+/* main integrantes */
+.mainIntegrantes{
+    display: flex;
+    justify-content: center;
+    font-size: 1.3rem;
+    font-weight: 800;
+}
+.contenedorflex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}  
  }
