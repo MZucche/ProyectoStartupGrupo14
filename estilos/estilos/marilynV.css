@@ -1,0 +1,260 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+/* HEADER */
+.headerM{
+    background-color: #3AB0FF;
+    border: solid #3AB0FF;
+    width: 100%;
+    height: 15%;
+    
+}
+/*css de la pagina principal -header */
+h1 {
+    font-family:  Georgia, 'Times New Roman', Times, serif;
+    font-size: 2.5rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: #FFF9F9;
+    height: 45px;
+    padding-top: 15px;
+    
+}
+
+ul {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+}
+
+h2 {
+    font-family: 'Roboto', sans-serif;
+    }
+
+.headernav {
+    width: 60%;
+    height: 100%;
+    padding: 8px;
+    margin-left: 15px;
+    margin-top: 20px;
+    list-style: none;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around ;
+}
+.headernav li{
+    font-size: 18px;
+    padding: 2px;
+}
+.headernav li a{
+   color: #FFF9F9; 
+}
+.headernav li a:hover{
+    color: #1363DF; 
+ }
+/* body */
+.bodyM{
+    width: 100%;
+    height: 900px;
+}
+.mainBox{
+    background-color: #DDDDDD;
+    width: 100%;
+    height: 100%;
+}
+
+/* ------------------------------------- */
+/* Articulo del perfil */
+.containerArtMari{
+    width: 100%;
+    height: 300px;
+    padding-top: 15px;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: start;
+    align-items: center;
+  
+}
+  /* imagen perfil */
+.containerArtMari img{
+    height: 150px;
+    width: 130px;
+    margin: 0;
+    padding: 0;
+    border-radius: 0.3rem;
+    border: solid black 0.5px;
+    box-shadow: 0px 4px 19px rgba(0, 0, 0, 0.25);
+}
+.imgMari{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+}
+  /* presentación - inicio */
+.presentationMari{
+   order: 3;
+   width: 100%;
+   margin: 0;
+   padding: 0;
+   display: flex;
+   flex-direction: column;
+}
+ /* letras h4 h2 h3 */
+.presentationMari h4{
+    width: 100%;
+    height: 15px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+}
+.presentationMari h2{
+    width: 100%;
+    height: 25px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+}
+.presentationMari h3{
+    width: 100%;
+    height: 20px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+
+}
+   /* contacto email */
+.contactMari{
+    border-radius: 0.2rem;
+    border: solid black 0.5px;
+    box-shadow: 0px 4px 19px rgba(0, 0, 0, 0.25);
+    background-color: #1363DF;
+    padding: 10px;
+    margin-top: 5px;
+    font-family: 'Poppins', sans-serif;
+}
+.contactMari a{
+    color: #FFF9F9;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+
+}
+.contactMari:hover{
+    background-color: #3AB0FF;
+}
+/* Sección de descripción */
+.containerSectionMari{
+    width: 100%;
+    margin-top: 25px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+
+}
+.containerSectionMari h3{
+    padding: 5px;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+   
+}
+  /* descripción */
+.boxDescriptionMari{  
+    width: 90%;
+
+}
+.boxDescriptionMari h4{
+    width: 90%;
+    padding: 8px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+  /* footer */
+.footerM{
+    background-color: #3AB0FF;
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.footerM p{
+    color: #FFF9F9;
+}
+ /* MEDIA QUERIES */ 
+ /*MOBILE*/
+ @media (min-width: 320px){
+    
+           
+    } 
+        /*Tablet*/
+    @media (min-width: 480px){
+    
+    
+    }
+     /*DESKTOP*/
+    @media (min-width: 760px){
+      /* Articulo del perfil- desktop */
+.containerArtMari{
+    width: 100%;
+    height: 300px;
+    padding-top: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+ /* presentación - desktop */
+ .presentationMari{
+    order: 3;
+    width: 100%;
+   /*  height: px; */
+    flex-direction: column;
+ }
+ .contactMari{
+    border-radius: 0.2rem;
+    border: solid black 0.5px;
+    position: relative;
+    bottom: -120px;
+    left: 80px;
+    
+}
+
+  /* imagen perfil */
+  .containerArtMari img{
+    height: 280px;
+    width: 200px;
+    border-radius: 0.5rem;
+    border: solid black 1.5px;
+ 
+}
+.imgMari{
+    width: 40%;
+    display: flex;
+    justify-content: start;
+}
+/* letras h4 h2 h3 */
+.presentationMari h4{
+    height: 25px;
+    justify-content: start;
+    
+}
+.presentationMari h2{
+    height: 45px;
+    justify-content: start;
+    
+}
+.presentationMari h3{
+    height: 34px;
+    justify-content: start;
+}
+ /* descripción h3 - desktop*/
+.containerSectionMari h3{
+    justify-content: start;
+}
+    
+    }
