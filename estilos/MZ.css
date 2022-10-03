@@ -149,8 +149,8 @@ li {
 .main {
     flex-direction: column;
 }
- }
- @media ( max-width: 820px ) /* mobile */
+}
+ @media ( max-width: 820px ) /* Tablet */
  {
 main {
     flex-direction: column;
