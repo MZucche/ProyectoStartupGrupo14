@@ -266,6 +266,14 @@ li {
     max-height: 100%;
     margin-top: 10%;
 }
+.h2Integrantes{
+    display: flex;
+    justify-content: center;
+    font-size: 1.3rem;
+    font-weight: 800;
+    font-family: Helvetica, sans-serif;
+    margin-top: 5%;
+}
 /* main integrantes */
 .mainIntegrantes{
     display: flex;
