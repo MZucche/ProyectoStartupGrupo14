@@ -20,7 +20,7 @@ body {
     margin: 0%;
     justify-content: center;
     background-color: #103E73;
-    font-family: Helvetica, sans-serif;;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     color: white;
     display: flex;
 }
@@ -62,6 +62,8 @@ a {
     color: black;
 }
 .main {
+    align-content: center;
+    height: 100%;
     display: flex;
     flex-direction: row;
     padding: 20px;
@@ -73,20 +75,26 @@ a {
     width: 60%;
     border-radius: 0.5rem;
     max-width: 50%;
-    max-height: 240px;
     margin-right: 25px;
-}
-.logos {
-    margin-top: 5%;
+    display: flex;
     flex-direction: row;
+    align-items: center;
+}
+.ImgLogo {
+    width: 50px;
+    height: 50px;
+}
+.div__logos {
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 10%;
 }
 .imgMZ {
     border-radius: 0.5rem;
     border: solid black 2px;
     box-shadow: 3px 4px 19px black;
     max-width: 100%;
-    max-height: 300px;
-    margin-right: 25px;
 }
 p {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -149,11 +157,37 @@ li {
 .main {
     flex-direction: column;
 }
+p {
+    font-size: 1rem;
+}
+.logos {
+    display: flex;
+    flex-direction: row;
+}
+.ImgLogo {
+    max-width: 35px;
+    max-height: 35px;
+}
+.foto {
+    display: flex;
+    flex-direction: column;
+}
+.div__logos {
+    display: flex;
+    flex-direction: row;
+}
 }
  @media ( max-width: 820px ) /* Tablet */
  {
 main {
     flex-direction: column;
     padding: 0%;
+}
+ }
+
+ @media ( max-width: 1370px ) {
+.main {
+    display: flex;
+    flex-direction: column;
 }
  }
