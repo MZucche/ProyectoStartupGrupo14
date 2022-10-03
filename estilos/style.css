@@ -45,6 +45,7 @@ li {
     font-size: 1.87rem;
     display: flex;
     flex-direction: row;
+    justify-content: center;
     
 }
 .headernav{
@@ -126,7 +127,9 @@ li {
     max-width: 38%;
     max-height: 38%;
 }
-
+.Sect_ImgSU {
+    justify-content: center;
+}
 
 /* main - contacto */
 .mainContacto{
@@ -165,7 +168,7 @@ li {
     font-family: Arial, Helvetica, sans-serif;
 }
 .formdiv {
-    padding-left: 45%;
+    display: flex;
     justify-content: center;
 }
 form.formC {
@@ -217,6 +220,14 @@ a:hover {
 li {
     margin: 0px;
     text-align: left;
+}
+.ImgSU {
+    max-width: 50%;
+    padding: 0%;
+}
+.Sect_ImgSU {
+    display: flex;
+    justify-content: center;
 }
  }
  @media ( max-width: 765px ) /* mobile */
