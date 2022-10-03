@@ -1,14 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="FSMM" content="desarrollar páginas webs, accesibles y responsive ">
     <title>Marcos Zucchello</title>
     <link rel="stylesheet" href="../estilos/MZ.css">
 </head>
 <body>
-    <header>
-        <div> 
-            <h1 class="Title1">FSMM</h1> 
-            <nav >
+    <header class="header">
+        <div class="headerContainer"> 
+            <h1 class="header__h1">FSMM</h1> 
+            <nav>
+            <label for="menu" class="nav__label"> ☰ </label>
+            <input type="checkbox" id="menu" class="nav__input">
                 <ul class="headernav">
                     <li class="headernavanc"><span><a href="../index.html">Home</a></span></li>
                     <li class="headernavanc"><span><a href="./Servicios.html">Servicios</a></span></li>
@@ -18,25 +24,35 @@
             </nav>
         </div>
     </header>    
-    <h1 class="Title2">Mi Perfil - MARCOS ZUCCHELLO -</h1>
-        <ul>
-            <section class="contaier">
-                <article class="article-container">
-                        <img class="article-img" src="../assets/Foto carnet.jpeg" alt="Foto de Marcos Zucchello">
-                    <div class="info">
-                        <h2 class="h2-article">Sobre mi</h2>
-                        <p>
-                            Mis conocimientos en programación y diseño son hasta el momento basicos, recien me estoy adentrando en el mundo de la programacion web.
-                            <br><br>
-                            Ademas del español, hablo ingles y aleman de manera fluida.
-                            <br><br>
-                            En mis tiempos libres suelo ir al gimnasio y jugar videojuegos.
-                        </p>
-                    </div>
-                </article>
-            </section>
-            <div class="mail"><a href="mailto:mzucchello@uade.edu.ar">Send email</a></div>
-        </ul>
+    <h1 class="Title2">MARCOS ZUCCHELLO</h1>
+    <main class="main">
+        <div class="foto"> 
+            <img class="imgMZ" src="../assets/Foto carnet.jpeg" alt="fotomarcosz" > 
+            <div class="logos">
+                <a href="mailto:mzucchello@uade.edu.ar">
+                    <img src="../assets/logos/logomailMZ.png" alt="logoMail" width="55" height="55" >
+                </a>
+                <a href="https://facebook.com/marcos.zucchello" target="_blank">
+                    <img src="../assets/logos/facebookSantino.png" alt="logoFacebook" width="45" height="45"> 
+                </a>
+                <a href="https://twitter.com/marcoszucche" target="_blank">
+                    <img src="../assets/logos/logotwitterMZ.png" alt="logoTwitter" width="50" height="50">
+                </a>
+                <a href="https://instagram.com/marcoszucche_" target="_blank">
+                    <img src="../assets/logos/instagramSantino.png" alt="logoInsagram" width="45" height="45">
+                </a>
+            </div>
+        </div>
+        <div class="texto">   
+            <p class="parrafo">
+                Mis conocimientos en programación y diseño son hasta el momento basicos, recien me estoy adentrando en el mundo de la programacion web.
+                <br><br>
+                Ademas del español, hablo ingles y aleman de manera fluida.
+                <br><br>
+                En mis tiempos libres suelo ir al gimnasio y jugar videojuegos.
+            </p>
+        </div>
+    </main>  
     <footer class="footerHome"> 
             <div> ©Copyright 2022 FSMM - Todos los Derechos Reservados</div>
     </footer>            

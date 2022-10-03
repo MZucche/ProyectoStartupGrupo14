@@ -21,7 +21,7 @@ a:hover {
     color: #ebd8fd;   
 } 
 li {
-        list-style: none;
+    list-style: none;
    }
   
  /* header */
@@ -58,8 +58,11 @@ li {
     padding: 1.87rem;
 
 }
-.headernav li{
+.headernav a{
     padding: 0.31rem;
+}
+.nav__input, .nav__label {
+    display: none;
 }
 /* main  */
 .mainHome{
@@ -76,14 +79,20 @@ li {
     margin-top: 2%;
 } 
 /* main integrantes */
-.mainIntegrantes{
+.h2Integrantes{
+    display: flex;
     justify-content: center;
-    padding: 1.5%;
-    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3rem;
     font-weight: 800;
+    font-family: Helvetica, sans-serif;
+}
+.mainIntegrantes {
+    margin-top: 2%;
 }
 .contenedorflex {
-    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .cajaintegrante {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -132,7 +141,7 @@ li {
 }
 .article-container {
     padding-top: 2%;
-    padding-left: 35%;
+    justify-content: center;
     padding-bottom: 0.5cm;
     display: flex;
 }
@@ -162,14 +171,6 @@ li {
 form.formC {
     display: table;
 }
-label, input {
-    display: table-cell;
-    margin-bottom: 10px;
-}
-label {
-    padding-right: 10px;
-}
-
  /* footer */
 .footerHome {
     width: 100%;
@@ -188,32 +189,78 @@ label {
 @media ( max-width: 992px ) /*tablet*/
  {
  /* header */
-.headernav{
-    margin-left: 10%;
-    margin-right: 10%;
-    padding: 1rem;
-    
+.headernav {
+    display: flex;
+    padding: 30px;
 }
-.headernav li{
-    padding: 0rem;
+a:hover {
+    color: #ebd8fd;
+}
+.nav__input:checked + .headernav {
+    height: relative;
+    top: 20px;
+    background: #5f3d7e;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0%;
+    position: relative;
+    } 
+
+.nav__label{
+    display: none;
+    cursor: pointer;
+
+}
+li {
+    margin: 0px;
+    text-align: left;
 }
  }
  @media ( max-width: 765px ) /* mobile */
  {
-.headernav{
-        display: none; /* etiqueta nav */
+header {
+    display: block;
+}
+.headernav {
+    display: none;
+}
+.nav__input:checked + .headernav {
+    height: relative;
+    top: 20px;
+    background: #331053;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0%;
+    position: relative;
     } 
+
+.nav__label{
+    display: block;
+    cursor: pointer;
+
+}
+li {
+    margin: 0px;
+    text-align: left;
+}
 /* main integrantes */
 .mainIntegrantes{
     display: flex;
     justify-content: center;
     font-size: 1.3rem;
     font-weight: 800;
+    flex-direction: column;
 }
 .contenedorflex {
     display: flex;
     flex-direction: column;
     align-items: center;
 
-}  
+}
  }
