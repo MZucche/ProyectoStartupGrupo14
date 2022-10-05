@@ -172,4 +172,7 @@ img{
            display: none;
            background-color:#e7dfd8;
           }
+        .footer{
+            margin-top: 5%;
+        }
 }
