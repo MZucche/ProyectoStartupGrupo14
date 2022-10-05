@@ -41,6 +41,31 @@ a {
     justify-content: space-around;
     align-items: center; 
 }
+nav{
+    background-color: #e7dfd8;
+}
+input{
+    display: none;
+}
+label{
+    display:none;
+}
+ul{
+    display: flex;
+    justify-content: left;
+    margin-top: 0;
+    padding: 0;
+}
+li{
+    display:block;
+    background: #e7dfd8;
+    margin: 5px;
+    padding: 5px;
+    list-style: none;
+    border-bottom: 1px solid gray;
+    width: 180px;
+    text-align: center;
+}
 .headernavanc {
     margin: 0px;
     font-size: 20px;
@@ -71,6 +96,10 @@ a {
     justify-content: left;
     align-items: center;
 }
+.iconos{
+    width: 50px;
+    height: 50px;
+}
 .foto {
     width: 30%;
     max-width: 100%;
@@ -94,11 +123,56 @@ a {
 img{
     width: 100%;
 }
-@media only screen and (max-width:600px){
+@media only screen and (max-width:765px){
     .main {
         flex-direction: column;
     }
     .foto{
-        order: 1;
+        order: 0;
+        width: 50%;
+        max-width: 100%;
+        max-height: auto;
     }
+    .headernav{
+        display:none
+    }
+    input:checked  ~ ul{ 
+        display:block;
+          }
+          input:checked ~ label {  
+          background: none; 
+              }
+          label:hover{                
+          background: #654f3b;
+          }
+        li{                        
+             margin: 0px;
+             text-align: left;
+             padding-left: 3.5%;
+             border-bottom: none;
+         }
+      
+         label {                    
+           box-sizing: border-box;
+           display: block;
+           border: 1px solid #281e14;
+           border-radius: 100px;
+           width: 40px;
+           height: 40px;
+           line-height: 40px;
+           font-weight: bold;
+           text-align: center;
+           user-select: none;
+           background-color: #e7dfd8;
+           margin-left: 5%;
+           margin-top: 2%;
+           margin-bottom: 2%;
+            }
+        ul{
+           display: none;
+           background-color:#e7dfd8;
+          }
+        .footer{
+            margin-top: 5%;
+        }
 }
