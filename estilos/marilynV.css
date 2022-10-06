@@ -8,7 +8,7 @@
     border: solid #3AB0FF;
     width: 100%;
     height: 15%;
-    
+  
 }
 /*css de la pagina principal -header */
 h1 {
@@ -31,6 +31,7 @@ h2 {
 .bodyM{
     width: 100%;
     height: 100vh;
+    display: block;
 }
 .mainBox{
     background-color: #DDDDDD;
@@ -163,21 +164,25 @@ h2 {
  /* MEDIA QUERIES */ 
  /*MOBILE*/
  @media (min-width: 320px){
-
-    .headernavMv {
-        width: 100%;
-        height: 100%;
-        padding: 0.5rem;
-        display:flex;
-         
-       
+    .inputM{
+        display: none;
     }
+    .labelM{
+        display: none;
+    }
+    .navMv{
+        background-color: #3AB0FF;
+    }
+   
     .headernavMv li{
         font-size: 1.12rem;
         padding: 0.50rem;
         list-style: none; 
          
     }
+    .headernavMv li:hover{
+        filter: brightness(110%); 
+     }
     .headernavMv li a{
        color: #FFF9F9;
        text-decoration: none;
@@ -187,70 +192,53 @@ h2 {
     .headernavMv li a:hover{
         color: #1363DF; 
      }
-.ul {
+.ul { 
         font-family: 'Poppins', sans-serif;
         font-weight: bolder;
     }
     
 /* header */
+
     .headernavMv{
     display: none;
     justify-content: center;
     padding: 0%;
     width: 100%;
     }
+ 
+    
+.inputM:checked ~ .headernavMv{
+    display: block;
 
-    .inputM:focus{
-        outline: none;
-    }
-    .labelM{
-        cursor: pointer;
-        display: block;
-        border: 1px solid black;
-        box-sizing: border-box;
-        width: 1.4rem;
-        height: 1.6rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        user-select: none;
-        position: relative;
-        bottom: -0.5rem;
-       
-    }
-    .inputM{
-        height: 1.8rem;
-        width: 1.8rem;
-        color: #3AB0FF;
-        appearance: auto;
-        border: initial;
-        background-color: initial;
-        position: relative;
-        bottom: 1rem;
-        list-style: none;
-        border: none;
-
-    }
-.inputM:checked + .headernavMv{
-    /* height: relative;
-    top: 20px; */
+}
+.inputM:hover ~ .labelM {
     background: #3AB0FF;
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: column;
-    align-items: center;
-    /* margin-left: 0%; */
-    position: relative;
-    bottom: 1.3rem;
-    right: 0.2rem;
+}
+.labelM:hover{
+    background: #1363DF;
+}
+
+.labelM{
+    box-sizing: border-box;
+    display: block;
+    border: solid 1px black;
+    border-radius: 5px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    font-weight: bold;
+    text-align: center;
+    user-select: none;
+    background-color: #3AB0FF;
+}
+.headernavMv{
+    display: none;
+    background-color: #3AB0FF;
+    position: absolute;
+    z-index: 1;
     width: 100%;
-
-}
-.inputM:checked + .labelM{
-    background-color: #1363DF;
-}
-
-           
+    right: 0.1rem;
+}        
     } 
         /*Tablet*/
     @media (min-width: 480px){
